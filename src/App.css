@@ -1,8 +1,8 @@
 .container {
-  width: 607px;
-  height: 829px;
   margin: auto;
-  margin-top: 75px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+
   border-radius: 12px;
   background-image: linear-gradient(180deg, #130754 0%, #3b2f80);
 }
@@ -87,4 +87,26 @@
 
 .icon {
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 95%; /* Ajustar el ancho para dispositivos más pequeños */
+    margin-top: 0px;
+    padding-bottom: 50px;
+  }
+
+  .top-bar {
+    flex-direction: column; /* Cambiar la dirección de la barra superior a columna */
+    align-items: center; /* Centrar elementos en la barra superior */
+    padding-top: 20px;
+  }
+
+  .top-bar input {
+    width: 80%; /* Hacer que el campo de entrada ocupe el ancho completo */
+  }
+
+  .search-icon {
+    margin-top: 10px; /* Ajustar el margen superior del ícono de búsqueda */
+  }
 }
